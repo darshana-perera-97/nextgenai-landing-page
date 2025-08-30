@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NexGenAI — Your #1 Solar Site in Sri Lanka</title>
+    <meta name="description" content="NexGenAI provides Sri Lanka's solar providers with a suite of intelligent AI tools to automate calculations, accelerate sales, and dominate the market.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .page-section { display: none; }
+        .page-section.active { display: block; }
+        .nav-link.active { color: white; }
+        .form-input {
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: white;
+        }
+        .form-select {
+             background-color: rgba(255, 255, 255, 0.05);
+             border: 1px solid rgba(255, 255, 255, 0.1);
+             color: white;
+             background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+             background-position: right 0.5rem center;
+             background-repeat: no-repeat;
+             background-size: 1.5em 1.5em;
+             padding-right: 2.5rem;
+             -webkit-appearance: none;
+             -moz-appearance: none;
+             appearance: none;
+        }
+         .form-select option {
+            background: #27272a;
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-zinc-900 font-sans text-white antialiased">
+    <div class="relative min-h-screen flex flex-col">
+        <div class="absolute inset-0 z-0 bg-zinc-900">
+            <div class="absolute inset-0 z-10 bg-gradient-to-b from-zinc-900 via-zinc-900/50 to-transparent"></div>
+            <div class="absolute inset-x-0 top-0 z-0 h-96 w-full bg-gradient-to-b from-indigo-900/30 to-zinc-900"></div>
+        </div>
+        
+        <header class="relative z-20">
+            <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+                <div class="flex lg:flex-1">
+                    <a href="#home" class="nav-link-logo -m-1.5 p-1.5 flex items-center gap-2">
+                        <span class="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-gradient-to-br from-violet-500 to-indigo-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 text-white"><path d="M12 6v12"></path><path d="M17.196 9 6.804 15"></path><path d="m6.804 9 10.392 6"></path></svg>
+                        </span>
+                        <span class="font-bold text-lg">NexGenAI</span>
+                    </a>
+                </div>
+                <div class="hidden lg:flex lg:gap-x-12">
+                    <a href="#home" class="nav-link text-sm font-semibold leading-6 text-zinc-300 hover:text-white">Home</a>
+                    <a href="#solutions" class="nav-link text-sm font-semibold leading-6 text-zinc-300 hover:text-white">Solutions</a>
+                    <a href="#why-nexgenai" class="nav-link text-sm font-semibold leading-6 text-zinc-300 hover:text-white">Why NexGenAI?</a>
+                    <a href="#about" class="nav-link text-sm font-semibold leading-6 text-zinc-300 hover:text-white">About Us</a>
+                    <a href="#contact" class="nav-link text-sm font-semibold leading-6 text-zinc-300 hover:text-white">Contact</a>
+                </div>
+                <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+                    <a href="#contact" class="nav-link-cta rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Request a Live Demo</a>
+                </div>
+            </nav>
+        </header>
+
+        <main class="relative z-10 flex-grow">
+
+            <section id="home" class="page-section">
+                <div class="relative isolate px-6 pt-14 lg:px-8">
+                    <div class="mx-auto max-w-4xl py-24 sm:py-32">
+                        <div class="text-center">
+                            <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">Turn your website into the #1 Solar Site in Sri Lanka.</h1>
+                            <p class="mt-6 text-lg leading-8 text-zinc-300">NexGenAI provides Sri Lanka's solar providers with a suite of intelligent AI tools to automate calculations, accelerate sales, and dominate the market.</p>
+                            <div class="mt-10 flex items-center justify-center gap-x-6">
+                                <a href="#contact" class="nav-link-cta rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500">Request a Live Demo</a>
+                                <a href="#solutions" class="nav-link text-sm font-semibold leading-6 text-white">See Our Tools in Action <span aria-hidden="true">→</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-16 flow-root sm:mt-24">
+                        <div class="text-center text-sm font-medium text-zinc-400">The Essential Toolkit for the Modern Sri Lankan Solar Provider</div>
+                    </div>
+                </div>
+
+                <div class="bg-zinc-900 py-24 sm:py-32">
+                    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                        <div class="mx-auto max-w-2xl lg:text-center">
+                            <h2 class="text-base font-semibold leading-7 text-indigo-400">Our Solutions</h2>
+                            <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">A Powerful Suite of Tools, Tailored for Your Business Website</p>
+                        </div>
+                        <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+                            <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
+                                <div class="flex flex-col">
+                                    <dt class="flex items-center gap-x-3 text-base font-semibold leading-7 text-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 flex-none text-indigo-400"><path d="m12 14 4-4"></path><path d="M3.34 19a10 10 0 1 1 17.32 0"></path></svg>
+                                        The Customer Conversion Suite
+                                    </dt>
+                                    <dd class="mt-4 flex flex-auto flex-col text-base leading-7 text-zinc-300">
+                                        <p class="flex-auto">Integrate our AI calculators directly into your website to turn passive visitors into active, informed leads.</p>
+                                    </dd>
+                                </div>
+                                <div class="flex flex-col">
+                                    <dt class="flex items-center gap-x-3 text-base font-semibold leading-7 text-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 flex-none text-indigo-400"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="m14 10-4 4"></path><path d="M10 10h4v4"></path></svg>
+                                        The Sales Accelerator Toolkit
+                                    </dt>
+                                    <dd class="mt-4 flex flex-auto flex-col text-base leading-7 text-zinc-300">
+                                        <p class="flex-auto">Equip your sales team with a powerful mobile-friendly platform to generate on-the-spot analyses and close deals faster.</p>
+                                    </dd>
+                                </div>
+                                <div class="flex flex-col">
+                                    <dt class="flex items-center gap-x-3 text-base font-semibold leading-7 text-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 flex-none text-indigo-400"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" x2="12" y1="9" y2="13"></line><line x1="12" x2="12.01" y1="17" y2="17"></line></svg>
+                                        Seamless Integration
+                                    </dt>
+                                    <dd class="mt-4 flex flex-auto flex-col text-base leading-7 text-zinc-300">
+                                        <p class="flex-auto">Our tools are designed to be easily embedded into any website platform with a simple copy-paste, requiring no technical expertise from your team.</p>
+                                    </dd>
+                                </div>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative isolate overflow-hidden bg-zinc-900">
+                    <div class="px-6 py-24 sm:px-6 sm:py-32 lg:px-8">
+                        <div class="mx-auto max-w-2xl text-center">
+                            <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Ready to Revolutionize Your Solar Sales?</h2>
+                            <p class="mx-auto mt-6 max-w-xl text-lg leading-8 text-zinc-300">See firsthand how NexGenAI can help you reduce costs, increase sales, and become a technology leader in Sri Lanka's solar industry.</p>
+                            <div class="mt-10 flex items-center justify-center gap-x-6">
+                                <a href="#contact" class="nav-link-cta rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500">Schedule Your Free 15-Minute Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="solutions" class="page-section">
+                 <div class="py-24 sm:py-32">
+                    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                        <div class="mx-auto max-w-4xl lg:text-center">
+                            <h2 class="text-base font-semibold leading-7 text-indigo-400">Our Platform</h2>
+                            <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">The Intelligent Engine Driving Your Solar Business</p>
+                            <p class="mt-6 text-lg leading-8 text-zinc-300">We've built a comprehensive platform to address every stage of the customer acquisition and sales process, from initial curiosity to final investment analysis.</p>
+                        </div>
+
+                        <div class="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-zinc-200/10 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
+                            <div class="p-8 sm:p-10 lg:flex-auto">
+                                <h3 class="text-2xl font-bold tracking-tight text-white">The NexGenAI Lead Generation Suite (For Websites)</h3>
+                                <p class="mt-6 text-base leading-7 text-zinc-300">Stop letting potential customers leave your website. Our suite of embeddable calculators captures user attention by providing instant, valuable, and personalized solar information. Each calculation is a qualified lead delivered straight to your inbox.</p>
+                                <div class="mt-10 flex items-center gap-x-4">
+                                    <h4 class="flex-none text-sm font-semibold leading-6 text-indigo-400">Key Tools Included</h4>
+                                    <div class="h-px flex-auto bg-zinc-100/10"></div>
+                                </div>
+                                <ul role="list" class="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-zinc-300 sm:grid-cols-2 sm:gap-6">
+                                    <li class="flex gap-x-3">✓ Interactive ROI Calculator</li>
+                                    <li class="flex gap-x-3">✓ Instant Requirement Analyzer (Bill-Based)</li>
+                                    <li class="flex gap-x-3">✓ Appliance-Based System Designer</li>
+                                    <li class="flex gap-x-3">✓ Geo-Solar Precision Engine</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-zinc-200/10 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
+                            <div class="p-8 sm:p-10 lg:flex-auto">
+                                <h3 class="text-2xl font-bold tracking-tight text-white">The NexGenAI Sales Accelerator Toolkit (For Sales Teams)</h3>
+                                <p class="mt-6 text-base leading-7 text-zinc-300">Empower your sales team to be consultants, not just quote generators. This toolkit provides all our analytical power in a simple, mobile-friendly interface they can use in the field or at the office.</p>
+                                <div class="mt-10 flex items-center gap-x-4">
+                                    <h4 class="flex-none text-sm font-semibold leading-6 text-indigo-400">Key Features</h4>
+                                    <div class="h-px flex-auto bg-zinc-100/10"></div>
+                                </div>
+                                <ul role="list" class="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-zinc-300 sm:grid-cols-2 sm:gap-6">
+                                    <li class="flex gap-x-3">✓ Rapid Proposal Generation</li>
+                                    <li class="flex gap-x-3">✓ On-the-Spot "What-If" Scenarios</li>
+                                    <li class="flex gap-x-3">✓ Data-Driven Sales Arguments</li>
+                                    <li class="flex gap-x-3">✓ Centralized & Consistent</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="why-nexgenai" class="page-section">
+                <div class="py-24 sm:py-32">
+                    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                        <div class="mx-auto max-w-4xl text-center">
+                            <h2 class="text-base font-semibold leading-7 text-indigo-400">Your Advantage</h2>
+                            <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Gain an Unbeatable Edge in the Sri Lankan Solar Market</p>
+                            <p class="mt-6 text-lg leading-8 text-zinc-300">Generic websites are no longer enough. Partnering with NexGenAI gives you a distinct technological and commercial advantage.</p>
+                        </div>
+                        <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+                            <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
+                                <div class="flex flex-col rounded-2xl bg-white/5 p-8">
+                                    <dt class="text-lg font-semibold leading-7 text-white">Increase Lead Quality by 300%</dt>
+                                    <dd class="mt-2 text-base leading-7 text-zinc-300">An anonymous website visitor is a guess. A visitor who has spent 10 minutes calculating their precise savings and payback period is a highly qualified, educated, and motivated buyer.</dd>
+                                </div>
+                                <div class="flex flex-col rounded-2xl bg-white/5 p-8">
+                                    <dt class="text-lg font-semibold leading-7 text-white">Cut Proposal Generation Time by 80%</dt>
+                                    <dd class="mt-2 text-base leading-7 text-zinc-300">Free your skilled technical and sales staff from tedious spreadsheet calculations. Let them focus on what they do best: building relationships and closing deals.</dd>
+                                </div>
+                                <div class="flex flex-col rounded-2xl bg-white/5 p-8">
+                                    <dt class="text-lg font-semibold leading-7 text-white">Enhance Your Brand as a Technology Leader</dt>
+                                    <dd class="mt-2 text-base leading-7 text-zinc-300">A website with interactive, intelligent tools from NexGenAI instantly positions your brand as modern, transparent, and trustworthy, setting you apart from old-school competitors.</dd>
+                                </div>
+                                <div class="flex flex-col rounded-2xl bg-white/5 p-8">
+                                    <dt class="text-lg font-semibold leading-7 text-white">Built for Sri Lanka</dt>
+                                    <dd class="mt-2 text-base leading-7 text-zinc-300">Our models are not generic. They are designed with Sri Lankan electricity tariffs, climate data, and market conditions in mind, ensuring the information you provide is accurate and relevant to your customers.</dd>
+                                </div>
+                                <div class="flex flex-col rounded-2xl bg-white/5 p-8">
+                                    <dt class="text-lg font-semibold leading-7 text-white">Simple, Fast, and Affordable</dt>
+                                    <dd class="mt-2 text-base leading-7 text-zinc-300">Get started in minutes. Our tools can be integrated into your existing website with a single line of code. No complex development projects, just immediate results.</dd>
+                                </div>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="about" class="page-section">
+                <div class="isolate px-6 py-24 sm:py-32 lg:px-8">
+                    <div class="mx-auto max-w-2xl lg:max-w-4xl">
+                        <div class="mx-auto max-w-2xl lg:mx-0">
+                            <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">About NexGenAI</h2>
+                        </div>
+                        <div class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-white/10 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+                            <article class="flex max-w-xl flex-col items-start justify-between">
+                                <div class="group relative">
+                                    <h3 class="mt-3 text-lg font-semibold leading-6 text-white">Our Mission</h3>
+                                    <p class="mt-5 text-sm leading-6 text-zinc-300">To accelerate Sri Lanka's transition to sustainable energy by empowering solar providers with the cutting-edge AI and data tools they need to succeed.</p>
+                                    <h3 class="mt-8 text-lg font-semibold leading-6 text-white">Our Vision</h3>
+                                    <p class="mt-5 text-sm leading-6 text-zinc-300">We envision a future where every solar provider in Sri Lanka, big or small, has access to the best technology to make solar energy an easy and transparent choice for every citizen.</p>
+                                </div>
+                            </article>
+                            <article class="flex max-w-xl flex-col items-start justify-between">
+                                <div class="group relative">
+                                    <h3 class="mt-3 text-lg font-semibold leading-6 text-white">Our Story</h3>
+                                    <p class="mt-5 text-sm leading-6 text-zinc-300">NexGenAI was founded by a team of technology and renewable energy enthusiasts who saw a critical gap in the market. While solar technology was advancing rapidly, the sales and customer acquisition tools used by providers were stuck in the past. We set out to change that by building an intuitive, powerful, and affordable platform to help solar companies thrive.</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="contact" class="page-section">
+                <div class="isolate px-6 py-24 sm:py-32 lg:px-8">
+                    <div class="mx-auto max-w-2xl text-center">
+                        <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Let's Build the Future of Solar, Together.</h2>
+                        <p class="mt-2 text-lg leading-8 text-zinc-300">We're excited to show you how NexGenAI can transform your business. Fill out the form below to schedule a no-obligation, 15-minute demo with one of our specialists.</p>
+                    </div>
+                    <form action="#" method="POST" class="mx-auto mt-16 max-w-xl sm:mt-20">
+                        <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+                            <div>
+                                <label for="full-name" class="block text-sm font-semibold leading-6 text-white">Full Name</label>
+                                <div class="mt-2.5">
+                                    <input type="text" name="full-name" id="full-name" autocomplete="name" class="form-input block w-full rounded-md border-0 px-3.5 py-2 shadow-sm focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6">
+                                </div>
+                            </div>
+                            <div>
+                                <label for="company-name" class="block text-sm font-semibold leading-6 text-white">Company Name</label>
+                                <div class="mt-2.5">
+                                    <input type="text" name="company-name" id="company-name" autocomplete="organization" class="form-input block w-full rounded-md border-0 px-3.5 py-2 shadow-sm focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6">
+                                </div>
+                            </div>
+                            <div class="sm:col-span-2">
+                                <label for="email" class="block text-sm font-semibold leading-6 text-white">Work Email</label>
+                                <div class="mt-2.5">
+                                    <input type="email" name="email" id="email" autocomplete="email" class="form-input block w-full rounded-md border-0 px-3.5 py-2 shadow-sm focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6">
+                                </div>
+                            </div>
+                            <div class="sm:col-span-2">
+                                <label for="phone-number" class="block text-sm font-semibold leading-6 text-white">Phone Number</label>
+                                <div class="mt-2.5">
+                                    <input type="tel" name="phone-number" id="phone-number" autocomplete="tel" class="form-input block w-full rounded-md border-0 px-3.5 py-2 shadow-sm focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6">
+                                </div>
+                            </div>
+                             <div class="sm:col-span-2">
+                                <label for="challenge" class="block text-sm font-semibold leading-6 text-white">What is your biggest challenge right now?</label>
+                                <div class="mt-2.5">
+                                   <select id="challenge" name="challenge" class="form-select block w-full rounded-md border-0 px-3.5 py-2 text-white shadow-sm focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6">
+                                        <option>Generating Leads</option>
+                                        <option>Speeding up Proposals</option>
+                                        <option>Standing out from competitors</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-10">
+                            <button type="submit" class="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Book My Free Demo</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer class="relative z-10 border-t border-white/10 mt-auto">
+            <div class="max-w-7xl sm:px-6 lg:px-8 mx-auto pt-10 pr-4 pb-10 pl-4">
+                <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+                    <div class="flex items-center gap-3">
+                        <span class="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-gradient-to-br from-violet-500 to-indigo-600">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 text-white"><path d="M12 6v12"></path><path d="M17.196 9 6.804 15"></path><path d="m6.804 9 10.392 6"></path></svg>
+                        </span>
+                        <span class="text-sm font-medium text-zinc-300">© 2025 NexGenAI</span>
+                    </div>
+                    <div class="flex items-center gap-4 text-sm text-zinc-400">
+                        <a href="#solutions" class="nav-link hover:text-white">Solutions</a>
+                        <a href="#why-nexgenai" class="nav-link hover:text-white">Why Us</a>
+                        <a href="#about" class="nav-link hover:text-white">About</a>
+                        <a href="#contact" class="nav-link hover:text-white">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('.page-section');
+            const navLinks = document.querySelectorAll('.nav-link, .nav-link-cta, .nav-link-logo');
+
+            function showSection(targetId) {
+                const id = targetId.startsWith('#') ? targetId.substring(1) : targetId;
+                
+                // Hide all sections
+                sections.forEach(section => {
+                    section.classList.remove('active');
+                });
+
+                // Show target section
+                const targetSection = document.getElementById(id);
+                if (targetSection) {
+                    targetSection.classList.add('active');
+                }
+                
+                // Update active state in nav
+                document.querySelectorAll('.nav-link').forEach(link => {
+                    if (link.getAttribute('href') === `#${id}`) {
+                        link.classList.add('active');
+                    } else {
+                        link.classList.remove('active');
+                    }
+                });
+                
+                window.scrollTo(0, 0);
+            }
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    showSection(targetId);
+                });
+            });
+
+            // Show initial section (home)
+            showSection('home');
+        });
+    </script>
+</body>
+</html>
