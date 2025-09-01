@@ -27,6 +27,12 @@ define('COMPANY_WEBSITE', 'https://nexgenai.com');
 define('EMAIL_CHARSET', 'UTF-8');
 define('EMAIL_ENCODING', '8bit');
 
+// PHPMailer specific settings
+define('MAILER_DEBUG', false); // Set to true for debugging
+define('MAILER_TIMEOUT', 30); // SMTP timeout in seconds
+define('MAILER_VERIFY_PEER', true); // Verify SSL certificate
+define('MAILER_VERIFY_PEER_NAME', true); // Verify peer name
+
 // Security settings
 define('ENABLE_CSRF_PROTECTION', true);
 define('MAX_EMAILS_PER_HOUR', 10);
